@@ -23,4 +23,5 @@ Reference for some commands used while using linux screen
 ## Command 5: To terminate a screen
 - Inside the screen: `ctrl + A` then `k` then `y`
 
-**Note that:** You cannot open a screen from 2 devices
+
+**GENERAL NOTE** You cannot open a screen from 2 devices
