@@ -23,5 +23,17 @@ Reference for some commands used while using linux screen
 ## Command 5: To terminate a screen
 - Inside the screen: `ctrl + A` then `k` then `y`
 
-
 **GENERAL NOTE** You cannot open a screen from 2 devices
+
+## Command 6: To open jupyter notebook in a screen
+- Quoted from (this answer)[https://stackoverflow.com/questions/45835971/persistent-use-of-jupyter-notebook-from-remote-server]
+1. On your computer (SSH terminal; e.g. gitBash): `ssh -L xxxx:localhost:yyyy server`.
+2. screen.
+3. `jupyter notebook --no-browser --port=yyyy`. [on remote server]
+4. In your browser: localhost:xxxx.
+
+## Command 7: Other options while having jupyter notebook on a screen
+
+1. To disconnect manually and reconnect: Exit the screen window: `control + a` and then `d`.
+2. Disconnect from the server: `control + d` And reconnect `ssh -L xxxx:localhost:yyyy`.
+- Optionally, you can reopen the screen window using `screen -r`. Go back to your notebook or reopen localhost:xxxx
